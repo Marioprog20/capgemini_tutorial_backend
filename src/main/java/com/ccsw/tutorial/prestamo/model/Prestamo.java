@@ -23,7 +23,7 @@ public class Prestamo {
     @Column(name = "clientname", nullable = false)
     private String clientName;
 
-    @Column(name = "ininate", nullable = false)
+    @Column(name = "inidate", nullable = false)
     private Date iniDate;
 
     @Column(name = "enddate", nullable = false)
