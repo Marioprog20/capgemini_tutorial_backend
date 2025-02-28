@@ -59,11 +59,11 @@ public class AuthorController {
     }
 
     /**
-     * Método para crear o actualizar un {@link Author}
+     * Método para eliminar un {@link Author}
      *
      * @param id PK de la entidad
      */
-    @Operation(summary = "Delete", description = "Method that deletes a Author")
+    @Operation(summary = "Delete", description = "Method that deletes an Author")
     @RequestMapping(path = "/{id}", method = RequestMethod.DELETE)
     public void delete(@PathVariable("id") Long id) throws Exception {
 
