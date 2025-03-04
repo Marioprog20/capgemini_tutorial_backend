@@ -2,14 +2,10 @@ package com.ccsw.tutorial.prestamo.model;
 
 import jakarta.persistence.*;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
-/**
- * @author ccsw
- *
- */
 @Entity
-@Table(name = "prestamo")
+@Table(name = "Prestamo")
 public class Prestamo {
 
     @Id
@@ -17,17 +13,17 @@ public class Prestamo {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "gamename", nullable = false)
+    @Column(name = "game_name", nullable = false)
     private String gameName;
 
-    @Column(name = "clientname", nullable = false)
+    @Column(name = "client_name", nullable = false)
     private String clientName;
 
-    @Column(name = "inidate", nullable = false)
-    private Date iniDate;
+    @Column(name = "ini_date", nullable = false)
+    private LocalDate iniDate;
 
-    @Column(name = "enddate", nullable = false)
-    private Date endDate;
+    @Column(name = "end_date", nullable = false)
+    private LocalDate endDate;
 
     public Long getId() {
         return id;
@@ -53,19 +49,19 @@ public class Prestamo {
         this.clientName = clientName;
     }
 
-    public Date getIniDate() {
+    public LocalDate getIniDate() {
         return iniDate;
     }
 
-    public void setIniDate(Date iniDate) {
+    public void setIniDate(LocalDate iniDate) {
         this.iniDate = iniDate;
     }
 
-    public Date getEndDate() {
+    public LocalDate getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     }
 }

@@ -21,9 +21,9 @@ INSERT INTO client(name) VALUES ('Cliente 2');
 INSERT INTO client(name) VALUES ('Cliente 3');
 INSERT INTO client(name) VALUES ('Cliente 4');
 
-INSERT INTO prestamo(gamename, clientname, inidate, enddate) VALUES ('On Mars', 'Cliente 1', '01-01-2025', '01-01-2025');
-INSERT INTO prestamo(gamename, clientname, inidate, enddate) VALUES ('Aventureros al tren', 'Cliente 2', '01-01-2025', '01-01-2025');
-INSERT INTO prestamo(gamename, clientname, inidate, enddate) VALUES ('1920: Wall Street', 'Cliente 3', '01-01-2025', '01-01-2025');
-INSERT INTO prestamo(gamename, clientname, inidate, enddate) VALUES ('Barrage', 'Cliente 4', '01-01-2025', '01-01-2025');
-INSERT INTO prestamo(gamename, clientname, inidate, enddate) VALUES ('Los viajes de Marco Polo', 'Cliente 1', '01-01-2025', '01-01-2025');
-INSERT INTO prestamo(gamename, clientname, inidate, enddate) VALUES ('Azul', 'Cliente 2', '01-01-2025', '01-01-2025');
+INSERT INTO prestamo(game_name, client_name, ini_date, end_date) VALUES ('On Mars', 'Cliente 1', '2025-01-01', '2025-01-01');
+INSERT INTO prestamo(game_name, client_name, ini_date, end_date) VALUES ('Aventureros al tren', 'Cliente 2', '2025-01-01', '2025-01-01');
+INSERT INTO prestamo(game_name, client_name, ini_date, end_date) VALUES ('1920: Wall Street', 'Cliente 3', '2025-01-01', '2025-01-01');
+INSERT INTO prestamo(game_name, client_name, ini_date, end_date) VALUES ('Barrage', 'Cliente 4', '2025-01-01', '2025-01-01');
+INSERT INTO prestamo(game_name, client_name, ini_date, end_date) VALUES ('Los viajes de Marco Polo', 'Cliente 1', '2025-01-01', '2025-01-01');
+INSERT INTO prestamo(game_name, client_name, ini_date, end_date) VALUES ('Azul', 'Cliente 2', '2025-01-01', '2025-01-01');

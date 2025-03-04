@@ -1,14 +1,14 @@
 package com.ccsw.tutorial.prestamo.model;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class PrestamoDto {
 
     private Long id;
     private String gameName;
     private String clientName;
-    private Date iniDate;
-    private Date endDate;
+    private LocalDate iniDate;
+    private LocalDate endDate;
 
     public Long getId() {
         return id;
@@ -34,19 +34,19 @@ public class PrestamoDto {
         this.clientName = clientName;
     }
 
-    public Date getIniDate() {
+    public LocalDate getIniDate() {
         return iniDate;
     }
 
-    public void setIniDate(Date iniDate) {
+    public void setIniDate(LocalDate iniDate) {
         this.iniDate = iniDate;
     }
 
-    public Date getEndDate() {
+    public LocalDate getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     }
 }
