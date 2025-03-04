@@ -36,8 +36,10 @@ public class PrestamoController {
      */
     @Operation(summary = "Find Page", description = "Method that return a page of Prestamos")
     @RequestMapping(path = "", method = RequestMethod.POST)
-    public Page<PrestamoDto> findPage(@RequestBody PrestamoSearchDto dto, @RequestParam(value = "title", required = false) String gameName, @RequestParam(value = "client", required = false) String clientName,
+    public Page<PrestamoDto> findPage(@RequestBody PrestamoSearchDto dto, @RequestParam(value = "gameName", required = false) String gameName, @RequestParam(value = "clientName", required = false) String clientName,
             @RequestParam(value = "fecha", required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate fecha) {
+
+        System.out.println("gameName: " + gameName + ", clientName: " + clientName + ", fecha: " + fecha);
 
         Page<Prestamo> page = this.prestamoService.findPage(dto, gameName, clientName, fecha);
 

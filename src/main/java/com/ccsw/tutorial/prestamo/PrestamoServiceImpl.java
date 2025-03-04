@@ -34,14 +34,14 @@ public class PrestamoServiceImpl implements PrestamoService {
         Specification<Prestamo> specification = Specification.where(null);
 
         if (gameName != null) {
-            specification = specification.and(new PrestamoSpecification(new SearchCriteria("gamename", ":", gameName)));
+            specification = specification.and(new PrestamoSpecification(new SearchCriteria("gameName", ":", gameName)));
         }
         if (clientName != null) {
-            specification = specification.and(new PrestamoSpecification(new SearchCriteria("clientname", ":", clientName)));
+            specification = specification.and(new PrestamoSpecification(new SearchCriteria("clientName", ":", clientName)));
         }
         if (fecha != null) {
-            specification = specification.and(new PrestamoSpecification(new SearchCriteria("inidate", ":<", fecha)));
-            specification = specification.and(new PrestamoSpecification(new SearchCriteria("enddate", ":>", fecha)));
+            specification = specification.and(new PrestamoSpecification(new SearchCriteria("iniDate", ":<", fecha)));
+            specification = specification.and(new PrestamoSpecification(new SearchCriteria("endDate", ":>", fecha)));
 
         }
         return this.prestamoRepository.findAll(specification, dto.getPageable().getPageable());
